@@ -5,10 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begalan</title>
     <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-    <div class="container py-5 border">
-        <h3 class="font-bold text-slate-700">Hello world!</h3>
-    </div>
+
+    <header class="bg-transparent absolute top-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="font-semibold text-slate-900 text-lg block py-4">Begalan</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#" class="text-base text-slate-800 py-2 mx-8 flex group-hover:text-teal-500">Intro</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base text-slate-800 mx-8 py-2 flex group-hover:text-teal-500">Sejarah</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-36 border">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-slate-900 font-semibold text-4xl mb-2">Begalan</h1>
+                    <p class="font-medium text-slate-500 leading-relaxed mb-5">Merupakan kebudayaan yang berasal dari eks krasidenan <span class="font-bold text-slate-900">Banyumasan.</span></p>
+                    <a href="#" class="text-sm font-semibold text-white bg-teal-500 px-6 py-3 rounded-full hover:shadow-lg hover:bg-teal-400">selengkapnya</a>
+                </div>
+
+                <div class="w-full self-end px-4 lg:w-1/2 mt-10 lg:right-0">
+                  
+                        <h1 class="text-slate-900 font-semibold text-3xl mb-2">Diadakan Saat Pernikahan</h1>
+                        <p class="font-medium text-slate-500 leading-relaxed mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae voluptatum quae qui esse sit nostrum voluptatibus culpa! Blanditiis, molestias necessitatibus. Soluta fugit odit repellat, nulla earum culpa officiis vero.</p>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-36 pb-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 border">
+                    <h1 class="text-slate-900 font-semibold text-3xl mb-2">Awal Mula</h1>
+                    <p>Begalan kali pertama diperkenalkan semasa Bupati Banyumas XIV, Raden Adipati Tjokronegoro (tahun 1850). Tradisi yang hanya ditampilkan apabila mempelai laki-laki merupakan putra sulung, ini berupa perarakan pengantin, para penari, penabuh gamelan, dilengkapi dengan usungan berupa perabot rumah tangga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

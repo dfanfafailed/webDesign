@@ -7,6 +7,9 @@ module.exports = {
       padding:'16px',
     },
     extend: {
+      colors: {
+        'coklat' : '#A27B5C'
+      },
       screens:{
         '2xl' : '1320px',
       },

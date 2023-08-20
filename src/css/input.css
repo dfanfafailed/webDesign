@@ -43,3 +43,18 @@
     border-4 border-white;
   }
 }
+
+.hide {
+  @apply opacity-0
+  transition-all duration-1000;
+}
+
+.fade-down {
+  @apply opacity-100
+  translate-y-10;
+}
+
+.fade-up {
+  @apply opacity-100
+  -translate-y-10;
+}

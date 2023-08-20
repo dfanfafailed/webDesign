@@ -1,11 +1,18 @@
 window.onscroll = function () {
   const navbar = document.querySelector('header');
   const fixed = navbar.offsetTop;
+  const text = document.querySelector('#text');
+
 
   if (window.pageYOffset > fixed) {
     navbar.classList.add('navbar-fixed');
-  }else{
+    if (window.pageYOffset > 350) {
+      text.classList.add('-z-10')
+    }
+  }
+  else{
     navbar.classList.remove('navbar-fixed');
+    text.classList.remove('-z-10')
   }
 }
 
@@ -49,3 +56,13 @@ button.onclick = function() {
       modal.style.display = "none";
   }
   }
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSJ0K9n2eRRT60IbSynoTEH5pTjimjX187-BeeD0iZ8XwKvDCsWW3fAv1GGyRCEgC-/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })

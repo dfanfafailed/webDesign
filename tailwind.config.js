@@ -8,11 +8,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        'coklat' : '#A27B5C'
+        'hijau' : '#1B9C85',
+        'biru' : '#3AA6B9',
       },
       screens:{
         '2xl' : '1320px',
       },
+    },
+    fontFamily: {
+      'slab': ['Zilla Slab', 'serif'],
     },
   },
   plugins: [],

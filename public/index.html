@@ -11,11 +11,11 @@
     <script defer src="js/app.js"></script>
 </head>
 <body>
-<section class="flex flex-col h-screen bg-center bg-cover bg-fixed" style="background-image: url(/img/larungan6.jpg);">
+<section class="flex flex-col h-screen bg-center bg-cover bg-fixed " style="background-image: url(/img/larungan6.jpg);">
 
-    <header class="bg-transparent absolute top-0 w-full flex items-center">
+    <header class="bg-transparent absolute top-0 w-full flex items-center ">
         <div class="container">
-            <div class="flex items-center justify-between relative">
+            <div class="flex items-center justify-between relative ">
                 <div class="px-4">
                     <a href="#" class="font-semibold text-lg block py-4 text-sky-500">Sedekah Laut</a>
                 </div>
@@ -29,10 +29,16 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#" class="text-base text-slate-800 py-2 mx-8 flex group-hover:text-sky-500">Intro</a>
+                                <a href="#home" class="text-base text-slate-800 py-2 mx-8 flex group-hover:text-sky-500">Intro</a>
                             </li>
                             <li class="group">
-                                <a href="#" class="text-base text-slate-800 mx-8 py-2 flex group-hover:text-sky-500">Sejarah</a>
+                                <a href="#sejarah" class="text-base text-slate-800 mx-8 py-2 flex group-hover:text-sky-500">Sejarah</a>
+                            </li>
+                            <li class="group">
+                                <a href="#prosesi" class="text-base text-slate-800 mx-8 py-2 flex group-hover:text-sky-500">Prosesi</a>
+                            </li>
+                            <li class="group">
+                                <a href="#galeri" class="text-base text-slate-800 mx-8 py-2 flex group-hover:text-sky-500">Galeri</a>
                             </li>
                         </ul>
                     </nav>
@@ -41,22 +47,20 @@
         </div>
     </header>
    
-    <div class="flex-1 flex items-center">
-        <div class="fixed left-[50%] ml-[-150px] text-white" id="text">
-            <h1 class="font-bold text-5xl">Sedekah Laut</h1>
+    <div class="flex-1 flex items-center justify-center">
+        <div class="fixed  text-white" id="text">
+            <h1 class="font-semibold text-5xl font-slab ">Sedekah Laut</h1>
         </div>
     </div>
-    <!-- <div class="w-full h-screen xl:bg-cover sm:bg-contain bg-no-repeat" style="background-image: url(/img/larungan6.jpg);">
-    </div> -->
    </section> 
    
 
-    <section class="pt-36" >
+    <section class="pt-36" id="home">
         <div class="container">
-            <div class="flex flex-wrap" >
-                <div class="w-full self-center px-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="50" >
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="50">
                     <h1 class="text-slate-900 font-semibold text-4xl mb-2">Sedekah Laut</h1>
-                    <p class="font-medium text-slate-500 leading-relaxed mb-5">Tradisi melarungkan jolen di laut lepas oleh warga <span class="font-bold text-sky-500">Cilacap.</span></p>
+                    <p class="font-medium text-slate-500 leading-relaxed mb-5">Tradisi melarungkan jolen di laut lepas oleh warga<span class="font-bold text-sky-500">Cilacap.</span></p>
                     <p class="font-medium text-slate-500 leading-relaxed mb-5 ">Upacara ini merupakan wujud rasa syukur yang disertai harapan agar nelayan diberi keselamatan saat melaut dan mendapat hasil tangkapan yang melimpah.</p>
                     <p class="font-medium text-slate-500">Berbagai macam acara dapat dilakukan untuk mengucapkan rasa syukur kepada Tuhan Yang Maha Esa, atas segala nikmat dan karunia yang diperoleh pada masa kehidupannya . Upacara sedekah laut adalah salah satu perwujudan ungkapan rasa syukur yang dilakukan oleh Kelompok Nelayan Sidakaya, Donan , Sentolokawat, Tegalkatilayu, Lengkong, Pandanarang, PPSC dan Kemiren.</p> 
                 </div>
@@ -80,24 +84,45 @@
             </div>
             <div class="w-full flex flex-wrap justify-center text-center mb-10">
                 
-                    <div class="w-full px-4 lg:w-1/2 mb-6 p-4" data-aos="fade-down" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-easing="linear"
-                    >
-                        <div class="rounded-xl bg-teal-500 max-w-xl mx-auto h-64 mb-3 hover:scale-110">  
-                           
+                <div class=" w-full px-4 lg:w-1/2 mb-6 p-4" data-aos="fade-down" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-easing="linear">
+                        
+                    <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow mx-auto ">
+                        <div>
+                            <img class="rounded-t-lg" src="/img/larungan.jpg" alt="" />
                         </div>
-                        <p class="text-base">Tradisi adat Sedekah laut di Kabupaten Cilacap awalnya bermula dari perintah Bupati Cilacap ke III yaitu Tumenggung Tjakrawerdaya III. </p>
+                        <div class="p-5">
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tradisi adat Sedekah laut di Kabupaten Cilacap awalnya bermula dari perintah Bupati Cilacap ke III yaitu Tumenggung Tjakrawerdaya III.</p>
+                        </div>
                     </div>
+                </div>
+
+
                     <div class="w-full px-4 lg:w-1/2 mb-6 p-4" data-aos="fade-down" data-aos-delay="400" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <div class="rounded-xl bg-teal-500 max-w-xl mx-auto h-64 mb-3 hover:scale-110">  
-                           
+
+                        
+                        <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow mx-auto ">
+                            <div>
+                                <img class="rounded-t-lg" src="/img/larungan.jpg" alt="" />
+                            </div>
+                            <div class="p-5">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Beliau memberi perintah kepada nelayan Pandanarang bernama Ki Arsa Menawi untuk melarung sesaji kelaut selatan.</p>
+                            </div>
                         </div>
-                        <p class="text-base">Beliau memberi perintah kepada nelayan Pandanarang bernama Ki Arsa Menawi untuk melarung sesaji kelaut selatan.</p>
+
                     </div>
+
+
                     <div class="w-full px-4 lg:w-1/2 mb-6 p-4" data-aos="fade-down" data-aos-delay="200" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <div class="rounded-xl bg-teal-500 max-w-xl mx-auto  h-64">  
-                           
+
+                        <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow mx-auto ">
+                            <div>
+                                <img class="rounded-t-lg" src="/img/larungan.jpg" alt="" />
+                            </div>
+                            <div class="p-5">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tepat pada hari jum'at Kliwon pada bulan Sura Tahun 1875. Ki Arsa Menawi pergi untuk melarung sesaji ke laut selatan bersama para nelayan lainya.</p>
+                            </div>
                         </div>
-                        <p>Tepat pada hari jum'at Kliwon pada bulan Sura Tahun 1875. Ki Arsa Menawi pergi untuk melarung sesaji ke laut selatan bersama para nelayan lainya.</p>
+                        
                     </div>
             </div>
             <div class="max-w-xl mx-auto text-center mb-10">
@@ -154,7 +179,7 @@
         </div>
     </section> -->
 
-    <section class="pt-32">
+    <section class="pt-32" id="prosesi">
         <div class="container">
             <div class="w-full">
                 <div class="max-w-xl mx-auto text-center mb-10 xl:mb-5">
@@ -247,7 +272,7 @@
     </section>
 
 
-    <section class="pt-20 pb-32 bg-slate-100 overflow-hidden" id="galeri" >
+    <section class="pt-20 pb-32 bg-slate-100 overflow-hidden" id="galeri">
         <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
             <div class="w-full px-4 ">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -286,7 +311,7 @@
 
 
 
-        <div class="fixed hidden inset-0 bg-opacity-50 bg-black" id="my-modal">
+        <div class="fixed hidden inset-0 bg-opacity-50 bg-black z-10" id="my-modal">
                 <div class="relative top-[25%] xl:top-20 p-5 rounded-md">
                     <div class="flex ">
                         <div class="mx-auto">
@@ -305,38 +330,81 @@
         </div>
     </section>
 
-    <section class="relative w-full min-h-screen  ">
+    <!-- pesan -->
+    <section>
+        <div class="container" data-aos="fade-right" data-aos-duration="400" data-aos-delay="100">
+            <div class="w-full h-96"> 
+                <div class="grid grid-cols-5">
+                    <div class="border">
+                        <img src="/img/gareng.png" alt="gareng">
+                    </div>
+                    <div class="col-span-5 xl:col-span-3">
+                        <h1 class="mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl ">Banggalah menjadi warga Indonesia</h1>
+                        <p class="mb-6  font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl">Yang memiliki budaya sedekah laut atau larungan. Melalui <span class="font-semibold">sedekah laut</span> kita dapat belajar menjadi bersyukur dan lebih mengingat apa yang tuhan berikan.</p>
+                    </div>
+                    <div class="row-end-1 col-start-5">
+                        <img src="/img/semar.png" alt="semar">
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="relative w-full py-10">
+        <div class="w-full ">
+            <div class="max-w-xl mx-auto text-center mb-0">
+                <h2 class="font-slab text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Sesajen</h2>
+            </div>
+        </div>
         <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center"> 
-            <form action="#" class="w-full sm::w-1/2 border border-slate-50 bg-white p-6 rounded-lg shadow-md" name="submit-to-google-sheet">
+            <div class="w-full sm:w-1/2 border shadow-lg rounded-xl bg-white p-6 mb-5 mx-5">
+                <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet.</h2>
+                <p class="font-slab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolorum!</p>
+            </div>
+            <div class="w-full sm:w-1/2 border shadow-lg rounded-xl bg-white p-6 mb-5 mx-5">
+                <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet.</h2>
+                <p class="font-slab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolorum!</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Form -->
+    <section class="relative w-full py-10">
+        <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center"> 
+            <form action="#" class="w-full sm:w-1/2 border shadow-lg rounded-xl bg-white p-6" name="submit-to-google-sheet">
                 <h2 class="text-2xl pb-3 font-semibold">
                     Form
                 </h2>
             <div>
-                <div class="flex flex-col mb-3">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" class="px-3 py-2 bg-slate-400 border border-slate-900 focus:border-slate-900 focus:outline-none focus:bg-slate-500 focus:text-white" name="name">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" id="name" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " name="name">
+
+                    <label for="name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Name</label>
                 </div>
-                <div class="flex flex-col mb-3">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" class="px-3 py-2 bg-slate-400 border border-slate-900 focus:border-slate-900 focus:outline-none focus:bg-slate-500 focus:text-white" name="email">
+
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="email" id="email" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
+
+                    <label for="email" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Email</label>
                 </div>
-                <div class="flex flex-col mb-3">
-                    <label for="message">Message</label>
-                    <textarea rows="4" id="message" class="px-3 py-2 bg-slate-400 border border-slate-900 focus:border-slate-900 focus:outline-none focus:bg-slate-500 focus:text-white" name="message">                            
-                    </textarea>
+
+                <div class="relative z-0 w-full mb-6 group">
+                    <textarea id="message" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " name="message"></textarea>
+                    
+                    <label for="message" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">message</label>
                 </div>
             </div>
 
-            <div class="w-full pt-3">
-                <button type="submit" class="w-full bg-green-400 border-b-2 rounded-md px-4 py-2 transition duration-50 focus:outline-none font-semibold hover:bg-red-500 hover:text-white text-xl cursor-pointer">
+            <div class="w-full pt-2">
+                <button type="submit" class="bg-green-400 border-b-4 rounded-xl px-5 transition duration-50 focus:outline-none font-semibold hover:bg-green-700 hover:text-white cursor-pointer">
                 Send
                 </button>
             </div>
-
             </form>
         </div>
     </section>
-
+    <!-- End Form -->
     <section class="pt-32">
         <div class="container">
             <div class="w-full h-96 border">
@@ -499,7 +567,6 @@
         </div>
     </section>
 
-    <div class="h-96"></div>
 
     <footer class="bg-slate-900 pt-24 pb-12 ">
         <div class="container ">

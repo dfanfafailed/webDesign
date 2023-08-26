@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors: {
         'hijau' : '#1B9C85',
-        'biru' : '#3AA6B9',
+        'biru-biasa' : '#94cceb',
+        'biru' : '#a4d2ec',
+        'coklat' : '#F9E0BB',
+        'biru-laut' : '#40F8FF'
       },
       screens:{
         '2xl' : '1320px',

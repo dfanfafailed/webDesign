@@ -19,7 +19,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      'slab': ['Zilla Slab', 'serif'],
+      'monserrat' :['Montserrat', 'sans-serif'],
+      'slab': ['Zilla Slab', 'serif']
     },
   },
   plugins: [],

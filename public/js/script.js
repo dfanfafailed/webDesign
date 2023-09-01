@@ -1,18 +1,14 @@
 window.onscroll = function () {
   const navbar = document.querySelector('header');
   const fixed = navbar.offsetTop;
-  const text = document.querySelector('#text');
+
 
 
   if (window.pageYOffset > fixed) {
     navbar.classList.add('navbar-fixed');
-    if (window.pageYOffset > 350) {
-      text.classList.add('-z-10')
-    }
   }
   else{
     navbar.classList.remove('navbar-fixed');
-    text.classList.remove('-z-10')
   }
 }
 

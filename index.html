@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedekah Laut</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="js/app.js"></script>
-    <!-- <style>
-        .border{
-            width: 100%;
-            background: orange;
-            }
-    </style> -->
+    <script defer src="public/js/app.js"></script>
 </head>
-<body >
+<body class="overflow-x-hidden">
 <section>
 
     <header class="bg-transparent absolute top-0 w-full flex items-center ">
@@ -66,16 +60,16 @@
         <div class="">
             <div class="grid grid-cols-4 mt-16 relative">
                 <div class="h-15 bg-white ring-2 ring-white aspect-square">
-                    <div class="w-full h-full bg-cover bg-center" style="background-image: url(/img/queen1.svg);">
-                        <div class="w-full h-full bg-cover mix-blend-screen" style="background-image: url(/img/majeti.png);"></div>
+                    <div class="w-full h-full bg-cover bg-center" style="background-image: url(img/queen1.svg);">
+                        <div class="w-full h-full bg-cover mix-blend-screen" style="background-image: url(img/majeti.png);"></div>
                     </div>
                 </div>
-                <div class="col-span-4 lg:col-span-2 self-center">       
-                    <h1 class="text-center font-slab text-6xl">Sedekah Laut</h1>
+                <div class="col-span-2 self-center">       
+                    <h1 class="text-center font-slab text-4xl md:text-6xl">Sedekah Laut</h1>
                 </div>
                 <div class="row-start-1 col-end-5 h-15 bg-white ring-2 ring-white aspect-square">
-                  <div class="w-full h-full bg-cover" style="background-image: url(/img/raden1.svg);">
-                        <div class="w-full h-full bg-cover mix-blend-screen" style="background-image: url(/img/pendopo.png);"></div>
+                  <div class="w-full h-full bg-cover" style="background-image: url(img/raden1.svg);">
+                        <div class="w-full h-full bg-cover mix-blend-screen" style="background-image: url(img/pendopo.png);"></div>
                     </div>
                 </div>
                  
@@ -85,11 +79,11 @@
 
            
 
-            <div class="flex justify-center">
-                <div class="max-w-lg px-4 text-center mt-0 sm:mt-16" data-aos="fade-up" data-aos-delay="50">
+            <div class="flex justify-center mt-10">
+                <div class="max-w-2xl px-4 text-center" data-aos="fade-up" data-aos-delay="50">
                     <h1 class="text-slate-900 font-semibold text-xl mb-2">Sebagai Bentuk Syukur</h1>
                     <!-- <p class="font-medium text-slate-500 leading-relaxed mb-5">Tradisi melarungkan jolen di laut lepas oleh warga <span class="font-bold text-sky-500">Cilacap.</span></p> -->
-                    <p class="font-medium text-slate-500">Berbagai macam acara dapat dilakukan untuk mengucapkan rasa syukur kepada Tuhan Yang Maha Esa, atas segala nikmat dan karunia yang diperoleh pada masa kehidupannya . Upacara sedekah laut adalah salah satu perwujudan ungkapan rasa syukur yang dilakukan oleh Kelompok Nelayan Sidakaya, Donan , Sentolokawat, Tegalkatilayu, Lengkong, Pandanarang, PPSC dan Kemiren.</p> 
+                    <p class="font-medium text-slate-500 p-4">Berbagai macam acara dapat dilakukan untuk mengucapkan rasa syukur kepada Tuhan Yang Maha Esa, atas segala nikmat dan karunia yang diperoleh pada masa kehidupannya . Upacara sedekah laut adalah salah satu perwujudan ungkapan rasa syukur yang dilakukan oleh Kelompok Nelayan Sidakaya, Donan , Sentolokawat, Tegalkatilayu, Lengkong, Pandanarang, PPSC dan Kemiren.</p> 
                 </div>
             </div>
         </div>
@@ -109,34 +103,48 @@
         </div> -->
     </section>
 
-    <section class="container mt-20" style="background-image: url(/img/wave2.svg); background-repeat: no-repeat; background-attachment: fixed; background-position: left;">
-        <div class="flex flex-wrap flex-col-reverse lg:flex-row">
-         
-                <div class="flex justify-end flex-row-reverse">
-                    <div class="ml-10 h-80 bg-sky-500 aspect-square bg-cover bg-center" style="background-image: url(/img/larungan6.jpg);"></div>
-                    <div class="h-52 w-32 bg-sky-400 aspect-[3/4] bg-cover mt-52" style="background-image: url(/img/larungan.jpg);"></div>
+    <section class="container mt-20" style="background-image: url(img/wave2.svg); background-repeat: no-repeat; background-attachment: fixed; background-position: left;">
+        <div class="flex flex-col-reverse lg:flex-row">
+          
+          
+                <!-- <div class="ml-5 h-56 sm:h-80 bg-sky-500 aspect-square bg-cover bg-center"></div> -->
+                <div class="w-full lg:w-1/2 border">
+                      <div class="flex justify-center">
+                           <div class="w-1/4 self-center sm:self-end">
+                                <img class="" src="img/larungan8.jpg" alt="">
+                            </div>
+                            <div class="w-1/2">
+                                <img class="mb-14 md:mb-28 ml-5 aspect-square" src="img/larungan7.jpg" alt="">
+                            </div>
+                     </div>
                 </div>
-            
-            <div class=" w-full lg:w-1/2 px-20 lg:px-10  my-auto">
+            <!-- <div class=" h-40 md:h-60 lg:h-32 aspect-[3/4]">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url(img/larungan6.jpg);"></div>
+            </div>          
+            <div class=" h-40 md:h-60 lg:h-80 aspect-square">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url(img/larungan6.jpg);"></div>
+            </div> -->
+ 
+            <div class="w-full lg:w-1/2 my-auto p-4">
                 <h2 class="text-4xl font-bold  text-gray-800 mb-4">Sejarah</h2>
                 <p class="text-base text-slate-500 mb-8">Sebagai ucapan rasa syukur para nelayan, karena telah diberikan hasil tangkapan yang melimpah.</p>
             </div>
         </div>
 
-        <div class="flex flex-wrap mb-20">
-          <div class="w-full lg:w-1/2 px-20 my-auto border">
+        <div class="flex flex-wrap mb-20 ">
+          <div class="w-full lg:w-1/2 px-12 my-auto border">
             <h4 class="text-3xl text-gray-800 font-bold mb-3">Cilacap</h4>
             <p class="text-slate-600 mb-8">Tradisi adat Sedekah laut di Kabupaten <span class="font-bold font-slab">Cilacap</span> awalnya bermula dari perintah Bupati Cilacap ke III yaitu Tumenggung Tjakrawerdaya III.</p>
           </div>
           <div class="w-full lg:w-1/2 border">
-            <img class="mx-auto" src="/img/R._Tumenggung_Tjakra_Werdana_II.jpg"  alt="" />
-             <a href="http:////id.wikipedia.org/wiki/Berkas:R._Tumenggung_Tjakra_Werdana_II.jpg" title="Domain Umum-Pemerintah Indonesia">DU-PemerintahIndonesia</a>, <a href="https://id.wikipedia.org/w/index.php?curid=3333731">Pranala</a>
+            <img class="mx-auto w-1/2" src="img/R._Tumenggung_Tjakra_Werdana_II.jpg"  alt="" />
+             <!-- <a href="http:////id.wikipedia.org/wiki/Berkas:R._Tumenggung_Tjakra_Werdana_II.jpg" title="Domain Umum-Pemerintah Indonesia">DU-PemerintahIndonesia</a>, <a href="https://id.wikipedia.org/w/index.php?curid=3333731">Pranala</a> -->
           </div>
         </div>
   
         <div class="flex items-center flex-wrap flex-col-reverse lg:flex-row mb-20">
           <div class="w-full md:w-1/2">
-            <img src="/img/pendopo.png" class="rounded-lg shadow-2xl" alt="" />
+            <img src="img/pendopo.png" class="rounded-lg shadow-2xl w-10/12" alt="" />
           </div>
           <div class="w-full md:w-1/2 sm:px-5">
             <h4 class="text-3xl text-gray-800 font-bold mb-3">Ki Arsa Menawi</h4>
@@ -150,7 +158,7 @@
             <p class="text-gray-600 mb-8">Tepat pada hari jum'at Kliwon pada bulan <span class="font-bold font-slab">Sura</span> Tahun 1875. Ki Arsa Menawi pergi untuk melarung sesaji ke laut selatan bersama para nelayan lainya.</p>
           </div>
           <div class="w-full md:w-1/2 ">
-            <img src="/img/majeti.png" class="rounded-lg shadow-2xl " alt="" />
+            <img src="img/majeti.png" class="rounded-lg shadow-2xl " alt="" />
           </div>
         </div>
 
@@ -360,8 +368,26 @@
         </div>
     </section>
 
+   <section class="pt-20 overflow-hidden" id="galeri">
+    <div class="w-full ">
+        <div class="max-w-xl mx-auto text-center mb-5">
+            <h2 class="font-slab text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Galeri</h2>
+        </div>
+    </div>
+    <div class="p-2 font-slab grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">    
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3] bg-[url('/img/larungan2.jpg')] bg-cover"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3] bg-[url('/img/larungan.jpg')] bg-cover"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3] bg-[url('/img/larungan3.jpg')] bg-cover"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3] bg-[url('/img/larungan6.jpg')] bg-cover"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3]"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3]"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3]"></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg xl:aspect-[4/3]"></div>
+    </div>
+   </section>
 
-    <section class="pt-20 pb-32 bg-slate-100 overflow-hidden" id="galeri">
+
+    <!-- <section class="pt-20 pb-32 overflow-hidden" id="galeri">
         <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
             <div class="w-full px-4 ">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -376,7 +402,7 @@
                     <img
                         alt="gallery"
                         class="block h-full w-full rounded-lg object-cover object-center hover:scale-125 ease-in duration-300"
-                        src="/img/larungan3.jpg" />    
+                        src="img/larungan3.jpg" />    
                 </div>
               </div>
               <div class="flex lg:w-1/2 xl:w-1/3 flex-wrap">
@@ -384,7 +410,7 @@
                   <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center hover:scale-125 ease-in duration-300"
-                    src="/img/larungan.jpg" />
+                    src="img/larungan.jpg" />
                 </div>
               </div>
               <div class="flex lg:w-1/2 xl:w-1/3 flex-wrap" id="open-btn">
@@ -392,7 +418,7 @@
                   <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center hover:scale-125 ease-in duration-300"
-                    src="/img/larungan2.jpg"/>
+                    src="img/larungan2.jpg"/>
                 </div>
               </div>
             </div>
@@ -417,7 +443,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- pesan -->
     <section class="container mt-20">
@@ -425,14 +451,14 @@
             <div class="w-full h-96"> 
                 <div class="grid grid-cols-5">
                     <div class="">
-                        <img src="/img/gareng.png" alt="gareng">
+                        <img src="img/gareng.png" alt="gareng">
                     </div>
                     <div class="col-span-3 text-center">
                         <h1 class="mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl ">Banggalah menjadi warga Indonesia</h1>
                         <p class="mb-6  font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl">Yang memiliki budaya sedekah laut atau larungan. Melalui <span class="font-semibold">sedekah laut</span> kita dapat belajar menjadi bersyukur dan lebih mengingat apa yang tuhan berikan.</p>
                     </div>
                     <div class="">
-                        <img src="/img/semar.png" alt="semar">
+                        <img src="img/semar.png" alt="semar">
                     </div>                
                 </div>
             </div>
@@ -497,7 +523,7 @@
                                     id="path1" />
                             </g>
                             </svg>
-                            <div class="flex absolute top-10 right-16">
+                            <div class="flex absolute top-10 right-10">
                             <i class="bx bxs-chevron-down text-3xl"></i>
                             </div>
                         </div>
@@ -517,7 +543,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Bubur dan Jenang</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -539,9 +567,12 @@
 
                 <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
-                        <div class="accordion-header flex items-center justify-between">
+                        <div class="accordion-header flex items-start">
                             <span class="font-semibold text-lg">Ayam Ingkung</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <img class="ml-5 w-8 h-8" src="img/ayam-icon.svg" alt="">
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -560,7 +591,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Alat Kecantikan</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -578,7 +611,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Jajan Pasar</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -597,9 +632,12 @@
 
                 <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
-                        <div class="accordion-header flex items-center justify-between">
-                            <span class="font-semibold text-lg">Kemenyan,Dupa,dan Minyak wangi.</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                        <div class="accordion-header flex items-start">
+                            <span class="font-semibold text-lg">Dupa</span>
+                            <img class="ml-5 w-[30px] h-[30px]" src="img/dupa.svg" alt="">
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -614,7 +652,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Tebu Wulung.</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -672,7 +712,7 @@
                                 d="m 699.286,1129.3962 c -6.69997,-0.9884 -19.81111,-3.8012 -29.13587,-6.2508 -9.32476,-2.4496 -21.99136,-5.0682 -28.14799,-5.8191 -12.83387,-1.5653 -48.63193,-10.1378 -67.87354,-16.2535 -38.71038,-12.3036 -69.04335,-26.2797 -92.64944,-42.6888 -8.99245,-6.2508 -24.68835,-16.075 -34.87979,-21.8315 -10.19144,-5.7566 -19.6472,-11.9917 -21.01279,-13.8559 -1.81749,-2.4811 -8.03793,-3.7069 -23.21079,-4.5737 -26.00228,-1.4856 -28.31509,-3.2915 -33.29383,-25.9978 -2.01741,-9.2008 -3.95088,-17.8056 -4.2966,-19.1218 -0.34571,-1.3162 -5.37759,-3.6731 -11.18196,-5.2374 -12.13392,-3.2703 -53.34051,-19.8001 -69.41305,-27.8448 -14.58099,-7.298 -27.63816,-17.2156 -74.02889,-56.22838 C 165.0196,845.73018 124.32943,807.06138 108.40992,786.99591 97.390512,773.10669 93.795452,765.58803 82.657109,733.13692 l -5.854572,-17.05706 -17.840947,-6.196 c -9.812513,-3.40781 -20.293149,-7.80753 -23.290325,-9.77715 -6.526881,-4.28924 -6.625634,-7.20252 -1.488975,-43.92931 l 3.66955,-26.23719 11.279448,-5.73689 c 6.565815,-3.33947 18.695327,-6.82444 29.025195,-8.33933 17.675699,-2.59217 17.802029,-2.57601 32.020037,4.09706 7.85087,3.68473 15.17888,6.69952 16.28446,6.69952 1.10558,0 -4.49424,-9.59297 -12.44406,-21.31772 C 106.06711,593.61811 92.799802,570.25062 84.534013,553.4151 76.268244,536.57957 64.114839,512.47416 57.526483,499.84751 45.575861,476.94411 40.65866,463.40494 37.836188,445.63165 36.415229,436.68385 35.697403,435.93104 22.72404,429.78332 5.6826033,421.70782 1.6485593,417.26445 0.27680227,405.05843 c -0.876376,-7.79817 0.175271,-12.20154 5.37321003,-22.49966 3.554534,-7.04219 8.1598647,-17.95784 10.2340567,-24.25701 2.074192,-6.29918 4.922476,-12.19951 6.329548,-13.11184 2.95264,-1.91448 37.234001,-8.99478 44.506481,-9.19213 5.511159,-0.14955 12.220679,4.8502 27.247784,20.30447 l 10.336298,10.63013 22.79545,-4.60148 c 26.93711,-5.4375 40.04629,-5.72078 64.70072,-1.39811 28.78596,5.04705 89.69368,23.80521 128.66199,39.62492 19.61716,7.96384 39.59155,15.40827 44.38752,16.54316 4.79597,1.13487 12.64393,4.7012 17.4399,7.92516 25.3513,17.04168 102.47568,43.99475 156.95905,54.85331 77.64047,15.47378 109.7939,11.38828 194.01883,-24.65258 46.42497,-19.86579 102.78544,-57.43707 146.05911,-97.36659 10.79094,-9.95703 25.01535,-22.60683 31.60981,-28.11067 6.59446,-5.50384 22.29037,-19.97465 34.87979,-32.15736 57.60225,-55.74142 84.09045,-77.3662 110.08935,-89.87652 20.985,-10.09773 35.1938,-12.5088 55.55,-9.42624 l 16.3104,2.46988 6.1932,-7.33237 c 10.9821,-13.00208 12.9952,-19.19744 14.8124,-45.58389 2.172,-31.53961 7.7833,-52.722293 18.6248,-70.308003 4.1759,-6.7735 4.5575,-8.95211 2.5174,-14.37284 -3.4211,-9.09031 -0.5487,-17.64888 8.9504,-26.66883 4.5306,-4.30204 10.8125,-12.36738 13.9597,-17.92295 5.5501,-9.7973604 13.0156,-15.1421804 25.4907,-18.24975037 3.9031,-0.97226 7.5811,0.22105 12.9584,4.20423997 4.9474,3.66473 10.3384,5.5618704 15.8049,5.5618704 6.7101,0 9.8918,1.60001 16.6395,8.36767 9.3839,9.41168 17.8518,25.30889 17.7475,33.31823 -0.038,2.92733 -1.5096,7.23226 -3.27,9.56654 -2.6589,3.52577 -3.2112,16.29362 -3.2627,75.431903 -0.034,39.15327 -0.9785,89.24631 -2.0987,111.31788 l -2.0367,40.13012 6.663,14.53068 c 20.1484,43.93956 52.1676,145.80516 62.9842,200.37739 10.1405,51.16102 7.8828,124.22694 -5.4084,175.03879 -14.1959,54.27037 -19.208,72.22049 -20.7225,74.21445 -0.9133,1.20254 -6.3496,11.04149 -12.0807,21.86432 -17.7786,33.57409 -44.5126,75.06577 -61.8022,95.91834 -15.0406,18.14008 -62.5708,71.68894 -90.5417,102.00684 -6.1289,6.6432 -12.224,14.0108 -13.5448,16.3725 -1.3207,2.3616 -7.2067,7.7111 -13.0799,11.8876 -5.8732,4.1766 -21.4695,15.2795 -34.6584,24.6732 -33.6205,23.9459 -91.49128,62.2539 -103.38299,68.4352 -21.37852,11.1124 -68.27459,27.2531 -79.56943,27.3861 -6.08652,0.072 -15.97139,1.0234 -21.96635,2.1148 -38.90985,7.084 -152.84494,11.0117 -184.40073,6.3569 z m 129.90106,-11.8437 c 67.49167,-5.8025 86.88054,-10.3684 149.32909,-35.1659 23.30725,-9.2549 132.05155,-85.492 151.50905,-106.218 59.0834,-62.9352 111.7021,-124.30458 126.5783,-147.62847 42.3865,-66.4568 51.5022,-87.84817 68.3259,-160.33736 12.6091,-54.32986 14.2214,-111.97371 4.4337,-158.51631 -2.529,-12.02538 -5.4624,-26.02438 -6.5188,-31.10891 -2.2515,-10.83657 -5.346,-21.83167 -19.8583,-70.56018 -20.5561,-69.02174 -31.1738,-95.03084 -40.1997,-98.47261 -5.6426,-2.15167 -5.7835,-2.624 -4.393,-14.73509 4.6931,-40.87672 7.6768,-230.062123 3.6284,-230.062123 -1.14,0 -6.7807,0.91999 -12.5349,2.0444 -5.7542,1.12444 -14.0329,2.62451 -18.397,3.33352 -5.7295,0.93086 -8.3169,2.64139 -9.3099,6.15472 -13.8053,48.843673 -20.8898,86.995553 -26.5852,143.166963 -2.9447,29.04296 -3.1278,37.96332 -1.0018,48.8017 2.7145,13.83828 1.1091,19.51476 -5.519,19.51476 -5.0669,0 -33.3298,25.98911 -46.9307,43.15503 -17.4219,21.98847 -21.5903,30.93637 -32.3517,69.44622 -5.0407,18.03806 -14.5,51.98242 -21.0207,75.4319 -24.1366,86.79814 -49.5498,152.9187 -80.0378,208.24343 -9.53438,17.30155 -12.98368,21.18139 -37.05976,41.68538 -37.17648,31.66078 -50.9546,41.24704 -82.13655,57.14725 -73.42513,37.44075 -151.75657,60.90914 -237.61856,71.19143 -73.39819,8.7897 -149.48715,40.65735 -180.55856,75.62185 l -10.22687,11.5082 -15.08354,-3.1712 c -15.52975,-3.2649 -18.54594,-2.4216 -18.6363,5.2106 -0.0371,3.1293 -7.84937,19.3893 -11.77624,24.5103 -1.58974,2.0731 -2.23721,9.9156 -1.75999,21.3177 0.70415,16.8248 1.07368,18.0388 5.49391,18.0495 2.60644,0.01 7.28508,1.7282 10.39699,3.8263 22.06297,14.8753 31.00266,20.4795 44.02115,27.5967 8.13966,4.4499 16.70134,9.9983 19.02595,12.3298 5.15002,5.1653 33.13516,19.4476 56.08218,28.6217 29.52579,11.8044 46.12181,16.3079 96.48136,26.1816 12.58942,2.4684 28.19109,6.0116 34.67036,7.8739 26.08173,7.4967 89.28018,9.1919 149.53853,4.0113 z m -95.91942,-18.7246 c -39.91107,-2.5394 -119.05804,-22.15 -168.61333,-41.7781 -24.62993,-9.7556 -89.69227,-42.0808 -100.07005,-49.7183 -10.09264,-7.4276 -11.07451,-10.7468 -5.78994,-19.5723 11.59725,-19.3679 54.84878,-31.3915 130.59419,-36.3041 23.97985,-1.5552 46.30283,-3.9156 49.6066,-5.2452 3.30377,-1.3297 15.0757,-3.4779 26.15984,-4.7738 64.13877,-7.4991 77.43435,-9.2918 105.17246,-14.1814 56.75502,-10.0046 110.00329,-26.8835 148.59349,-47.10212 57.75637,-30.26037 103.5105,-59.98988 123.2899,-80.10973 10.8734,-11.06046 14.4512,-17.14655 28.0195,-47.66245 46.7445,-105.13141 64.7593,-154.39758 82.7479,-226.2957 12.3521,-49.36979 22.7886,-85.25216 32.4061,-111.41741 6.7212,-18.28554 28.8139,-60.63253 36.5585,-70.07488 17.8811,-21.80098 28.1766,-32.77805 30.7427,-32.77805 1.6634,0 5.8134,2.79728 9.2222,6.21616 7.8225,7.84564 15.7517,33.28355 21.9159,70.30896 2.5026,15.03172 7.3577,36.23032 10.7893,47.10799 14.1096,44.72631 21.0769,104.81624 17.4206,150.24439 -4.322,53.6989 -7.6297,70.21825 -24.4019,121.86669 -11.8098,36.36756 -19.7192,52.67119 -41.3677,85.27155 -55.2395,83.18483 -117.0698,154.2508 -167.2284,192.2076 -36.5874,27.687 -86.51908,60.0869 -111.34145,72.2477 -7.75064,3.7971 -15.1081,7.7163 -16.34991,8.7092 -3.42456,2.7383 -33.39785,12.3964 -46.94754,15.1275 -45.38663,9.1484 -57.30727,11.2257 -70.84957,12.3464 -8.39295,0.6945 -21.14587,2.1594 -28.33983,3.2554 -21.09444,3.2136 -43.97945,3.8829 -71.93956,2.104 z M 474.39982,956.5525 c -5.83447,-3.2748 -2.06102,-8.2106 11.54223,-15.0978 22.43317,-11.3577 40.9708,-15.0768 103.44646,-20.7536 32.3728,-2.9415 65.47422,-5.958 73.55868,-6.7034 12.50308,-1.1527 14.90749,-0.8103 16.09436,2.2918 0.76745,2.0058 0.44821,4.5968 -0.70939,5.7578 -1.15761,1.1611 -28.09152,4.5026 -59.85317,7.4257 -85.35063,7.855 -105.57648,11.4714 -128.19048,22.9207 -8.81602,4.4634 -13.26923,5.6291 -15.88869,4.1588 z m 249.81015,-38.0976 c -0.71,-1.8556 -0.63063,-4.0361 0.17636,-4.8455 1.56198,-1.5666 38.29393,-8.4159 57.38601,-10.7006 10.5012,-1.2566 11.44493,-1.0031 11.44493,3.0752 0,5.5521 -2.30808,6.4354 -30.39531,11.6325 -27.86204,5.1555 -36.88531,5.3514 -38.61199,0.8384 z M 370.07422,945.333 c 3.70179,-6.3133 8.19784,-13.4935 9.99121,-15.9561 3.16586,-4.3471 1.47073,-5.3768 -58.29712,-35.414 -65.33538,-32.8353 -72.59156,-37.56888 -130.40993,-85.0734 -32.13322,-26.40116 -63.99404,-56.90099 -73.64837,-70.50235 -4.65225,-6.55426 -6.82861,-12.16382 -6.82861,-17.60078 0,-4.38921 -1.13562,-9.11936 -2.5236,-10.51144 -9.642298,-9.67081 38.80026,-24.72431 68.89192,-21.40812 19.70351,2.17137 36.37204,6.84182 66.61087,18.66412 26.92718,10.52756 125.28188,39.82763 156.95906,46.75843 93.47303,20.45142 105.08997,22.1435 150.41909,21.90951 63.67892,-0.32871 107.73004,-8.02379 183.11889,-31.98818 14.29712,-4.54474 45.65076,-22.21251 81.74951,-46.06589 61.20391,-40.44237 105.5732,-89.48366 185.34056,-204.85658 50.5816,-73.15968 68.9963,-96.05914 90.7448,-112.84515 9.7176,-7.50029 13.7574,-12.60742 19.2006,-24.27368 3.7915,-8.12618 10.6492,-19.7086 15.2393,-25.7387 11.4255,-15.00974 39.8802,-43.63355 48.2209,-48.50734 6.7945,-3.97037 6.8333,-4.09515 5.4762,-17.61862 -2.4488,-24.40209 8.7629,-105.96001 21.5718,-156.92176 3.9293,-15.632983 7.0225,-28.547523 6.8738,-28.698973 -0.1487,-0.15152 -6.0218,-0.73355 -13.0514,-1.29356 l -12.7809,-1.01822 -6.0897,13.6129 c -3.3494,7.48709 -8.2493,22.258733 -10.8888,32.825893 -4.7769,19.12413 -4.8993,26.25515 -0.9222,53.7618 1.3549,9.37107 1.0693,10.28216 -3.6943,11.78605 -2.8395,0.89644 -10.8903,7.88692 -17.8908,15.5344 -7.0004,7.64749 -14.1524,13.90453 -15.8932,13.90453 -1.7408,0 -5.8904,-2.02088 -9.2213,-4.49082 -4.4282,-3.28352 -9.5324,-4.53112 -18.9866,-4.64073 -17.8571,-0.20705 -27.8002,2.97187 -48.6991,15.56963 -23.8196,14.3583 -42.3424,29.71409 -81.90457,67.90061 -34.08756,32.90221 -71.6246,66.8789 -102.19154,92.49873 -62.56103,52.43584 -129.93622,88.46555 -199.1442,106.4948 -49.1378,12.80082 -58.89864,12.86383 -125.98769,0.81353 -47.33312,-8.50181 -108.27204,-28.02238 -151.50909,-48.53293 -34.44366,-16.33921 -90.30238,-39.06798 -120.98927,-49.23025 -72.5505,-24.02585 -99.26528,-27.4815 -145.99524,-18.88498 -22.70238,4.17637 -27.982118,4.56497 -29.459008,2.16824 -1.45519,-2.3615 -3.66962,-2.03836 -11.57641,1.68924 -5.377352,2.53515 -12.302603,5.2451 -15.389421,6.02213 -3.086839,0.77702 -6.187391,3.22971 -6.890132,5.45038 -0.70274,2.2207 -4.639099,7.78027 -8.74748,12.35464 -4.108381,4.57434 -7.492528,9.05493 -7.520366,9.95683 -0.0279,0.9019 -2.004018,1.63983 -4.391584,1.63983 -5.043094,0 -16.990206,-11.72868 -20.044412,-19.67789 -2.04062,-5.31122 -2.188161,-5.34583 -5.207247,-1.22193 -7.2361607,9.88416 -1.662414,18.78565 16.512746,26.37156 14.697755,6.13451 16.502086,8.48886 19.530262,25.48363 3.300915,18.5254 11.557419,39.38783 24.13906,60.99426 5.042855,8.66008 14.482914,27.08871 20.977924,40.95248 10.098418,21.55535 41.377898,72.70726 46.342378,75.78455 0.88867,0.55085 10.36911,-0.42347 21.06761,-2.16516 10.69853,-1.74166 24.60207,-3.17043 30.89678,-3.175 6.29471,-0.004 11.44493,-0.87401 11.44493,-1.93206 0,-1.05806 -5.15022,-5.84368 -11.44493,-10.63468 -15.76704,-12.00056 -31.48147,-27.70832 -58.5255,-58.50063 -27.08747,-30.84179 -46.631348,-55.87357 -52.026448,-66.63538 -3.747485,-7.47528 -15.34229,-41.76232 -15.34229,-45.36875 0,-0.98403 3.617361,-3.73469 8.038593,-6.11261 12.509437,-6.72804 46.195645,-5.71275 69.350935,2.09021 23.44611,7.90095 46.14176,20.43907 65.0551,35.93943 42.52342,34.84987 130.54326,79.11396 230.33312,115.83172 65.50775,24.10362 81.98468,27.43126 135.15918,27.29627 36.20531,-0.0918 43.58709,-0.78003 72.18065,-6.72881 63.39657,-13.18941 89.61104,-21.42751 127.28815,-40.00134 39.89273,-19.66608 78.63254,-41.31919 85.01948,-47.52053 19.62052,-19.05033 52.87371,-59.47049 94.8405,-115.28115 52.74073,-70.13864 76.55063,-98.01226 93.72833,-109.72491 2.9975,-2.04385 5.9405,-4.35023 6.54,-5.1253 0.5995,-0.77507 5.5044,-3.97861 10.8999,-7.11894 12.5464,-7.3024 32.458,-12.49642 47.906,-12.49642 h 12.1103 l 4.0642,-11.47877 c 5.2906,-14.94273 17.7841,-34.4363 22.0703,-34.4363 6.3736,0 5.628,6.00847 -2.6087,21.02278 -6.4217,11.70594 -8.2664,17.48433 -8.2953,25.98551 l -0.037,10.93216 -15.7789,-0.77094 c -27.9,-1.36313 -49.1558,6.35097 -75.0999,27.25508 -16.1616,13.02197 -37.6597,38.52368 -78.127,92.6764 -35.57473,47.60553 -75.55412,97.64763 -102.18628,127.90627 -4.40089,5.00015 -52.04886,50.62655 -56.98531,54.56755 -27.62961,22.05817 -61.78403,45.21373 -85.84322,58.19886 -30.58937,16.50959 -78.54331,29.47887 -117.15641,31.68529 -12.39678,0.70836 -24.75622,2.3662 -27.46539,3.68405 -3.84288,1.86936 -13.42805,0.87317 -43.59974,-4.53123 -39.94259,-7.15459 -53.37081,-9.24327 -129.1434,-20.08736 -50.05368,-7.16338 -138.74034,-17.37144 -150.41909,-17.31363 -4.19648,0.0219 -20.4827,-0.61083 -36.1916,-1.40356 -29.8198,-1.50481 -55.01367,0.7048 -82.1792,7.20744 -14.46258,3.46193 -15.05776,3.43266 -24.58317,-1.20881 -5.36891,-2.61615 -10.64453,-4.75665 -11.72355,-4.75665 -1.07903,0 -4.39394,5.32807 -7.366478,11.84016 -3.09888,6.78881 -8.04978,13.50245 -11.60475,15.7365 -3.410066,2.14299 -6.510727,4.09569 -6.890371,4.33937 -0.379645,0.24365 -0.99233,8.90455 -1.361533,19.24641 -0.602178,16.86824 -0.26925,18.80338 3.235013,18.80338 3.040733,0 5.711541,5.45017 12.053711,24.59736 12.179108,36.76901 15.018428,42.35185 31.353658,61.6496 16.8903,19.95349 38.68585,40.43583 87.53925,82.26487 47.63921,40.78942 65.5553,53.84852 89.13881,64.97342 21.72752,10.2495 53.05704,22.0025 59.19654,22.2071 2.11112,0.07 6.39804,-4.6401 10.33743,-11.3586 z M 578.48857,587.31227 c -40.00308,-3.09931 -48.63143,-5.36785 -46.05263,-12.10794 1.24359,-3.25037 3.24791,-3.58043 13.94256,-2.29606 6.86962,0.82501 26.16669,2.4347 42.88239,3.57707 30.36124,2.07495 36.4337,4.05085 31.34579,10.19951 -2.48344,3.00121 -10.02866,3.11361 -42.11811,0.62742 z M 444.41938,562.3034 c -40.10794,-10.88032 -97.2343,-33.70201 -149.3291,-59.65621 -28.2954,-14.09708 -30.64826,-15.45932 -67.94081,-39.33557 -15.78557,-10.10658 -32.21722,-19.34933 -36.51478,-20.53945 -8.03809,-2.22601 -10.5003,-7.62087 -4.52733,-9.91969 7.28329,-2.80311 18.86209,2.31646 47.95696,21.20417 34.26076,22.24133 93.72969,52.49313 139.50549,70.96634 40.66419,16.41039 45.80915,18.17242 76.29954,26.13059 22.18862,5.79136 26.15984,7.47701 26.15984,11.10399 0,6.11458 -9.1896,6.12789 -31.60981,0.0459 z m 376.63864,-7.38662 c 0.531,-1.59773 -0.4656,-2.08638 -2.58874,-1.26924 -1.89868,0.73074 -3.45214,2.28923 -3.45214,3.46333 0,2.87382 4.95463,1.07428 6.04088,-2.19409 z"
                                 id="path2" />
                                 </svg>
-                                <div class="flex absolute top-10 right-16">
+                                <div class="flex absolute top-10 right-10">
                                     <i class="bx bxs-chevron-down text-3xl"></i>
                                 </div>
                             </div>
@@ -700,7 +740,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Nasi Ambeng</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -715,9 +757,12 @@
 
                 <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
-                        <div class="accordion-header flex items-center justify-between">
+                        <div class="accordion-header flex items-start">
                             <span class="font-semibold text-lg">Air Tawar</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <img class="ml-5 w-8 h-8" src="img/kendi.svg" alt="">
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -733,7 +778,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Bunga</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -755,9 +802,12 @@
 
                 <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
-                        <div class="accordion-header flex items-center justify-between">
+                        <div class="accordion-header flex items-start">
                             <span class="font-semibold text-lg">Minuman atau Wedang</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <img class="ml-5 w-10 h-10" src="img/wedang.svg" alt="">
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -781,7 +831,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Kepala Kerbau</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -796,7 +848,9 @@
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-center justify-between">
                             <span class="font-semibold text-lg">Cikal</span>
-                            <i class="bx bxs-chevron-down text-3xl"></i>
+                            <div class="flex absolute top-10 right-10">
+                                <i class="bx bxs-chevron-down text-3xl"></i>
+                            </div>
                         </div>
 
                         <div class="accordion-body">
@@ -839,7 +893,7 @@
             </div>
 
             <div class="w-full pt-2">
-                <button type="submit" class="bg-green-400 border-b-4 rounded-xl px-5 transition duration-50 focus:outline-none font-semibold hover:bg-green-700 hover:text-white cursor-pointer">
+                <button type="submit" class="bg-green-500 border-b-4 rounded-xl px-5 transition duration-50 focus:outline-none font-semibold hover:bg-green-700 text-white cursor-pointer">
                 Send
                 </button>
             </div>
@@ -1042,7 +1096,7 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="public/js/script.js"></script>
     <script>
         AOS.init();
     </script>

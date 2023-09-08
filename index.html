@@ -18,7 +18,7 @@
     </style> -->
 </head>
 <body class="overflow-x-hidden">
-<section>
+<section >
 
     <header class="bg-transparent absolute top-0 w-full flex items-center ">
         <div class="container">
@@ -63,8 +63,8 @@
    
 
     <section id="home">
-        <div class="">
-            <div class="grid grid-cols-4 mt-16 relative">
+        <div class="relative z-10 bg-white">
+            <div class="grid grid-cols-4 mt-16 ">
                 <div class="h-15 bg-white ring-2 ring-white aspect-square">
                     <div class="w-full h-full bg-cover bg-center" style="background-image: url(img/queen1.svg);">
                         <div class="w-full h-full bg-cover mix-blend-screen" style="background-image: url(img/majeti.png);"></div>
@@ -109,18 +109,19 @@
         </div> -->
     </section>
 
-    <section class="container mt-20" style="background-image: url(img/wave2.svg); background-repeat: no-repeat; background-attachment: fixed; background-position: left;">
-        <div class="flex flex-col-reverse lg:flex-row">
+    <section class="mt-20 relative" id="sejarah">
+
+        <div class="flex flex-col-reverse lg:flex-row mx-auto">
           
           
                 <!-- <div class="ml-5 h-56 sm:h-80 bg-sky-500 aspect-square bg-cover bg-center"></div> -->
-                <div class="w-full lg:w-1/2 border">
+                <div class="w-full lg:w-1/2 border z-10">
                       <div class="flex justify-center">
-                           <div class="w-1/4 self-center sm:self-end">
+                           <div class="w-1/4 self-center mt-20 sm:mt-0 sm:self-end">
                                 <img class="" src="img/larungan8.jpg" alt="">
                             </div>
                             <div class="w-1/2">
-                                <img class="mb-14 md:mb-28 ml-5 aspect-square" src="img/larungan7.jpg" alt="">
+                                <img class="mb-28 ml-5 aspect-square" src="img/larungan7.jpg" alt="">
                             </div>
                      </div>
                 </div>
@@ -148,17 +149,17 @@
           </div>
         </div>
   
-        <div class="flex items-center flex-wrap flex-col-reverse lg:flex-row mb-20">
-          <div class="w-full md:w-1/2">
-            <img src="img/pendopo.png" class="rounded-lg shadow-2xl w-10/12" alt="" />
+        <div class="flex items-center flex-wrap flex-col-reverse lg:flex-row mb-20 mx-10">
+          <div class="w-full md:w-1/2 border">
+            <img src="img/pendopo.png" class="rounded-lg shadow-2xl w-10/12 mx-auto" alt="" />
           </div>
-          <div class="w-full md:w-1/2 sm:px-5">
+          <div class="w-full md:w-1/2 sm:px-5 border">
             <h4 class="text-3xl text-gray-800 font-bold mb-3">Ki Arsa Menawi</h4>
             <p class="text-gray-600 mb-8">Beliau memberi perintah kepada nelayan Pandanarang bernama <span class="font-bold font-slab">Ki Arsa Menawi</span> untuk melarung sesaji kelaut selatan.</p>
           </div>
         </div>
   
-        <div class="flex items-center flex-wrap mb-20">
+        <div class="flex items-center flex-wrap mb-20 mx-10">
           <div class="w-full md:w-1/2">
             <h4 class="text-3xl text-gray-800 font-bold mb-3">Sura</h4>
             <p class="text-gray-600 mb-8">Tepat pada hari jum'at Kliwon pada bulan <span class="font-bold font-slab">Sura</span> Tahun 1875. Ki Arsa Menawi pergi untuk melarung sesaji ke laut selatan bersama para nelayan lainya.</p>
@@ -170,10 +171,15 @@
 
         <div class="flex flex-wrap mb-20">
             <div class="max-w-xl mx-auto text-center mb-10">
-                <h5 class="text-xl text-slate-700">Sejak itulah adat melarung sesaji ke laut muncul yang hingga saat ini adat tersebut pun masih dilakukan dan menjadi tradisi yang rutin dilaksanakan oleh masyarakat, dan dilaksanakan sekali setahun  pada hari Selasa atau Jumat Kliwon di bulan Muharram. Sejak tahun 1983, tradisi ini pun diangkat sebagai atraksi wisata yang yang menarik 
-                </h5>
+                <p class="text-slate-700">Sejak itulah adat melarung sesaji ke laut muncul yang hingga saat ini adat tersebut pun masih dilakukan dan menjadi tradisi yang rutin dilaksanakan oleh masyarakat, dan dilaksanakan sekali setahun  pada hari Selasa atau Jumat Kliwon di bulan Muharram. Sejak tahun 1983, tradisi ini pun diangkat sebagai atraksi wisata yang yang menarik 
+                </p>
             </div>
         </div>
+     
+        <div class="absolute -z-10 mr-0">
+            <img class="fixed top-20 m-auto h-auto w-96" src="img/wiku.svg" alt="">
+        </div>
+
       </section>
 
     <!-- <section class="pt-36" id="sejarah" style="background-image: url(/img/wave2.svg); background-repeat: no-repeat; background-attachment: fixed; background-position: left;">
@@ -283,7 +289,7 @@
     </section> -->
 
     <section class="pt-32" id="prosesi">
-        <div class="container">
+        <div class="container z-10">
             <div class="w-full">
                 <div class="max-w-xl mx-auto text-center mb-10 xl:mb-5">
                     <h1 class="text-slate-900 font-bold text-4xl mb-2 hide">Prosesi Sedekah Laut</h1>
@@ -615,7 +621,7 @@
                 <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
                         <div class="accordion-header flex items-start">
-                            <span class="font-semibold text-lg">Kemenyan,Dupa,dan Minyak wangi</span>
+                            <span class="font-semibold text-lg">Dupa</span>
                             <img class="ml-5 w-[30px] h-[30px]" src="img/dupa.svg" alt="">
                             <div class="flex absolute top-10 right-16">
                                 <i class="bx bxs-chevron-down text-3xl"></i>
@@ -624,7 +630,7 @@
 
                         <div class="accordion-body">
                             <div class="p-4 border-t">
-                                <p>Sebagai  media penghubung atau perantara antara badan yang kasar dengan sukma. </p>
+                                <p>Selain Dupa ada juga kemenyan,dan Minyak wangi sebagai  media penghubung atau perantara antara badan yang kasar dengan sukma. </p>
                             </div>
                         </div>
                     </div>

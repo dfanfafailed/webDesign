@@ -78,3 +78,32 @@ button.onclick = function() {
     })
   })
 
+  $.ajax({
+    url: 'index.php',
+    dataType: 'json',
+    success: function(response){
+      $.each(response, function(i, data){
+        $('#card').append(`
+        <div class="w-full lg:w-1/2 border">
+          <div class="shadow-lg rounded-xl bg-white p-6 mb-5 mx-5">
+            <div class="md:flex">
+              <div class="w-full mb-6">
+                <div class="h-1/2 md:h-full bg-slate-500 aspect-[4/3]">
+                  <img class="h-full w-full bg-cover" src="https://serayunews.com`+data.gambar+`"/>
+                </div>
+              </div>
+              <div class="w-full my-auto ml-3">
+              <h3 class="text-base lg:text-xl pb-3 font-semibold">
+                  <a href="https://serayunews.com`+data.link+`"> 
+                  `+data.judul+`
+                  </a>
+              </h3>
+            </div>
+            </div> 
+          </div> 
+        </div>
+    `);
+      });
+      
+    }
+  })

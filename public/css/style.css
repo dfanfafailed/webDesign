@@ -843,8 +843,9 @@ video {
   margin: auto;
 }
 
-.m-10 {
-  margin: 2.5rem;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-5 {
@@ -865,11 +866,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mb-10 {
@@ -924,6 +920,10 @@ video {
   margin-left: auto;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -946,14 +946,6 @@ video {
 
 .mt-52 {
   margin-top: 13rem;
-}
-
-.mr-0 {
-  margin-right: 0px;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -1057,6 +1049,10 @@ video {
 
 .aspect-\[3\/4\] {
   aspect-ratio: 3/4;
+}
+
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
 }
 
 .aspect-square {
@@ -1546,6 +1542,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1736,6 +1736,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2235,6 +2239,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
@@ -2283,13 +2292,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f1f2f7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 242 247 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-\[url\(\'\/img\/larungan\.jpg\'\)\] {
+  background-image: url('/img/larungan.jpg');
+}
+
+.bg-\[url\(\'\/img\/larungan2\.jpg\'\)\] {
+  background-image: url('/img/larungan2.jpg');
+}
+
+.bg-\[url\(\'\/img\/larungan3\.jpg\'\)\] {
+  background-image: url('/img/larungan3.jpg');
+}
+
+.bg-\[url\(\'\/img\/larungan6\.jpg\'\)\] {
+  background-image: url('/img/larungan6.jpg');
 }
 
 .decoration-slice {
@@ -2439,11 +2459,6 @@ video {
   padding: 1.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2497,11 +2512,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .pb-12 {
@@ -2566,14 +2576,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-left {
@@ -3429,6 +3431,12 @@ video {
   text-align: center;
 }
 
+.group:hover .group-hover\:scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:text-sky-500 {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -3569,12 +3577,20 @@ video {
     width: 33.333333%;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:p-2 {
     padding: 0.5rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:text-5xl {
@@ -3656,12 +3672,12 @@ video {
     padding-right: 8rem;
   }
 
-  .lg\:pt-12 {
-    padding-top: 3rem;
-  }
-
   .lg\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:text-5xl {
@@ -3705,6 +3721,10 @@ video {
 
   .xl\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .xl\:aspect-\[4\/3\] {
+    aspect-ratio: 4/3;
   }
 
   .xl\:w-1\/3 {

@@ -53,6 +53,7 @@ button.onclick = function() {
   }
   }
 
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwSJ0K9n2eRRT60IbSynoTEH5pTjimjX187-BeeD0iZ8XwKvDCsWW3fAv1GGyRCEgC-/exec'
   const form = document.forms['submit-to-google-sheet']
 

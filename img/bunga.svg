@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="1497"
-   height="1600"
-   viewBox="0 0 1497 1600"
+   width="740.70056"
+   height="819.61035"
+   viewBox="0 0 740.70056 819.61035"
    sodipodi:docname="WhatsApp Image 2023-09-12 at 07.00.38.jpeg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,7 +27,9 @@
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
-     id="g1">
+     id="g1"
+     style="display:inline"
+     transform="translate(-409.17392,-404.22656)">
     <image
        width="1497"
        height="1600"

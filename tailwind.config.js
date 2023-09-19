@@ -20,7 +20,8 @@ module.exports = {
     },
     fontFamily: {
       'monserrat' :['Montserrat', 'sans-serif'],
-      'slab': ['Zilla Slab', 'serif']
+      'slab': ['Zilla Slab', 'serif'],
+      'poppins' : ['Poppins', 'sans-serif']
     },
   },
   plugins: [],

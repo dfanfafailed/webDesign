@@ -2,13 +2,18 @@ window.onscroll = function () {
   const navbar = document.querySelector('header');
   const fixed = navbar.offsetTop;
 
-
+  const wiku = document.querySelector('#wiku');
+  
 
   if (window.pageYOffset > fixed) {
     navbar.classList.add('navbar-fixed');
+    if (window.pageYOffset > 100) {
+      wiku.classList.remove('hidden');
+    }
   }
   else{
     navbar.classList.remove('navbar-fixed');
+    wiku.classList.add('hidden');
   }
 }
 
@@ -79,6 +84,18 @@ button.onclick = function() {
     })
   })
 
+  // const observer = new IntersectionObserver((entries)=>{
+  //   entries.forEach((entry)=>{
+  //     if(entry.isIntersecting){
+  //       entry.target.classList.add('fade');
+  //     }else{
+  //       entry.target.classList.remove('fade');
+  //     }
+  //   });
+  // });
+  // const hiddenElements = document.querySelectorAll('.hide');
+  // hiddenElements.forEach((el)=>observer.observe(el));
+  
   // $.ajax({
   //   url: 'index.php',
   //   dataType: 'json',

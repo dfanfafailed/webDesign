@@ -11,12 +11,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="public/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- <style>
-        .border{
-            width: 100%;
-            background: orange;
-            }
-    </style> -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 <section >
@@ -116,7 +111,7 @@
           
           
                 <!-- <div class="ml-5 h-56 sm:h-80 bg-sky-500 aspect-square bg-cover bg-center"></div> -->
-                <div class="basis-[40%] border z-10">
+                <div class="basis-[40%] z-10">
                       <div class="flex justify-evenly ml-10">
                            <div class="w-1/5 lg:w-1/4 translate-y-[65%] translate-x-1/3 lg:translate-x-0">
                                 <img class="" src="img/larungan8.jpg" alt="">
@@ -133,39 +128,47 @@
                 <div class="w-full h-full bg-cover bg-center" style="background-image: url(img/larungan6.jpg);"></div>
             </div> -->
  
-            <div class="w-full lg:w-1/2 border my-auto px-10 lg:px-0">
+            <div class="w-full lg:w-1/2 my-auto px-10 lg:px-0">
                 <h2 class="text-4xl font-bold  text-gray-800 mb-4">Sejarah</h2>
                 <p class="text-base text-slate-500 mb-8"><span class="font-bold font-slab">Sejarah</span> tradisi atau adat sedekah laut ini bermula dari perintah Bupati Cilacap ke III.
                 </p>
             </div>
         </div>
 
-        <div class="p-10">
-            <div class="flex flex-wrap ">
-            <div class="w-full lg:w-1/2 lg:pl-28 px-10 lg:px-0 my-auto">
+            <div class="flex flex-wrap mb-20 pt-20">
+            <div class="w-full md:w-1/2 sm:px-5 lg:pl-28 px-10 lg:px-0 my-auto ">
                 <h4 class="text-3xl text-gray-800 font-bold mb-3">Tumenggung Tjakrawerdaya III</h4>
-                <p class="text-slate-600 mb-8">Yakni <span class="font-bold font-slab">Tumenggung Tjakrawerdaya III</span> yang memerintahkan kepada sesepuh nelayan Pandanarang 
+                <p class="text-slate-600 mb-8"><span class="font-bold font-slab">Tumenggung Tjakrawerdaya III</span> yang memerintahkan kepada sesepuh nelayan Pandanarang 
                     bernama Ki Arsa Menawi, untuk melarung sesaji ke laut selatan beserta nelayan lainnya 
                     pada hari Selasa atau Jumat Kliwon pada bulan Sura tahun 1875.
                 </p>
             </div>
-            <div class="w-full lg:w-1/2 border">
-                <img class="mx-auto w-1/2" src="img/R._Tumenggung_Tjakra_Werdana_II.jpg"  alt="" />
-                
+            <div class="w-full md:w-1/2">
+                <img class="mx-auto w-[40%]" src="img/R._Tumenggung_Tjakra_Werdana_II.jpg"  alt="" />
                 <!-- <a href="http:////id.wikipedia.org/wiki/Berkas:R._Tumenggung_Tjakra_Werdana_II.jpg" title="Domain Umum-Pemerintah Indonesia">DU-PemerintahIndonesia</a>, <a href="https://id.wikipedia.org/w/index.php?curid=3333731">Pranala</a> -->
             </div>
             </div>
+        
   
-        <div class="flex items-center flex-wrap lg:flex-row mb-20 mx-10">
-          <div class="w-full md:w-1/2 border">
+        <div class="flex items-center flex-wrap flex-col-reverse md:flex-row mb-20 mx-10">
+          <div class="w-full md:w-1/2">
             <img src="img/pendopo.png" class="rounded-lg shadow-2xl w-10/12 mx-auto" alt="" />
           </div>
-          <div class="w-full md:w-1/2 sm:px-5 border">
+          <div class="w-full md:w-1/2 sm:px-5">
             <h4 class="text-3xl text-gray-800 font-bold mb-3">Animisme</h4>
             <p class="text-gray-600 mb-8">Sedekah laut juga memiliki akar dalam kepercayaan <span class="font-bold font-slab"> animisme</span> dan keagamaan masyarakat pesisir Jawa. 
                 Masyarakat tradisional percaya bahwa roh-roh laut memiliki pengaruh besar terhadap hasil tangkapan mereka. </p>
           </div>
         </div>
+        <!-- <div class="flex items-center flex-wrap flex-col-reverse lg:flex-row mb-20 mx-10">
+            <div class="w-full md:w-1/2 border">
+              <img src="img/pendopo.png" class="rounded-lg shadow-2xl w-10/12 mx-auto" alt="">
+            </div>
+            <div class="w-full md:w-1/2 sm:px-5 border">
+              <h4 class="text-3xl text-gray-800 font-bold mb-3">Ki Arsa Menawi</h4>
+              <p class="text-gray-600 mb-8">Beliau memberi perintah kepada nelayan Pandanarang bernama <span class="font-bold font-slab">Ki Arsa Menawi</span> untuk melarung sesaji kelaut selatan.</p>
+            </div>
+          </div> -->
   
         <div class="flex items-center flex-wrap mb-20 mx-10">
           <div class="w-full md:w-1/2 lg:pl-16">
@@ -393,18 +396,14 @@
     </div>
     </section>
 
-    <section class="">
+    <section class="mt-32">
         <div class="w-full ">
-            <div class="max-w-xl mx-auto text-center mb-5">
+            <div class="max-w-xl mx-auto text-center mb-7">
                 <h2 class="font-slab text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Sesajen</h2>
             </div>
         </div>
 
-
-
-
-
-        <div class="container flex flex-wrap mt-20" id="sajen">
+        <div class="container flex flex-wrap" id="sajen">
             <div class="w-full md:w-1/2 ">
                  <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
                     <div class="bg-white rounded-xl border-2 p-5 mb-5 mx-5">
@@ -853,14 +852,43 @@
         </div>
     </section>
 
+    <section class=" pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-10">
+                    <!-- <h4 class="font-semibold text-lg text-sky-500 mb-2">Contact</h4> -->
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-4xl">Hubungi kami</h2>
+                </div>
+            </div>
 
+            <form action="" name="submit-to-google-sheet" class="">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full mb-8 relative z-0 ">
+                        <input type="text" id="name" class="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " name="name">
 
+                        <label for="name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Name</label>
+                    </div>
+                    <div class="w-full mb-8 relative z-0">
+                        <input type="email" id="email" class="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " name="email">
 
->>>>>>> 852a9a14fc195c5f9e772572ba002cd9a2e22e8b
+                        <label for="email" class="bg-white absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0]  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Email</label>
+                    </div>
+                    <div class="w-full mb-8 relative z-0">
+                        <textarea id="message" class="bg-white block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " name="message"></textarea>
 
-    <section class="relative w-full py-10">
+                        <label for="message" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-0 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Message</label>
+                    </div>
+                    
+                    <div class="w-full pt-4">
+                        <button type="submit" class="bg-sky-500 w-full border-b-4 rounded-xl py-3 px-8 transition duration-50 focus:outline-none font-semibold hover:bg-sky-700 text-white cursor-pointer">
+                        Send
+                        </button>
+                    </div>
+                </div>
+            </form>
+    </div>
 
-        <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center"> 
+        <!-- <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center"> 
             <form action="#" class="w-full sm:w-2/4 border shadow-lg rounded-xl bg-white p-6" name="submit-to-google-sheet">
                 <h2 class="text-2xl pb-3 font-semibold">
                     Form
@@ -885,20 +913,20 @@
                 </div>
             </div>
 
-            <div class="w-full pt-2">
-                <button type="submit" class="bg-green-500 border-b-4 rounded-xl px-5 transition duration-50 focus:outline-none font-semibold hover:bg-green-700 text-white cursor-pointer">
+            <div class="w-full pt-4">
+                <button type="submit" class="bg-sky-500 w-full border-b-4 rounded-xl py-3 px-8 transition duration-50 focus:outline-none font-semibold hover:bg-sky-700 text-white cursor-pointer">
                 Send
                 </button>
             </div>
             </form>
-        </div>
+        </div> -->
     </section>
 
     <section class="container ">
         <div class="text-center p-5">
             <h5 class="font-monserrat text-4xl text-slate-700">Berita</h5>
         </div> 
-        <div class="flex flex-wrap" id="card">       
+        <div class="flex flex-wrap mb-80" id="card">       
           <div class="w-full lg:w-1/2 border">
             <div class="shadow-lg rounded-xl bg-white p-6 mb-5 mx-5">
               <div class="md:flex">
@@ -1278,8 +1306,17 @@
               </div> 
             </div> 
           </div>  
+          <div class= "relative top-20">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 w-full lg:w-1/2 mx-auto px-10 lg:px-0">Location</h2>
         </div>
+        </div>
+
+        <div class="relative top-40 ">
+            <div class="z-20 absolute m-0 w-full left-0 bottom-0" id="googleMap" style="height:380px;"></div>
+        </div>
+
     </section>
+
     <!-- End Form -->
     <!-- <section class="pt-32">
         <div class="container">
@@ -1429,47 +1466,45 @@
 
 
     <footer class="bg-slate-900 pt-24 pb-12 ">
-        <div class="container ">
+        <div class="container">
+            <div class="mb-28"></div>
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
                     <h2 class="font-bold text-4xl text-white mb-5">Sedekah Laut</h2>
-                    <h3 class="font-bold text-2xl mb-2">Hello world!</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p class="text-slate-300">Jl.Cilapap</p>
+                    <div class="mt-5 ">
+                        <p class="text-slate-300">Bagaimana sebagai bentuk rasa syukur terhadap hasil laut karena masyarakatnya secara mayoritas menggantungkan
+                            hidupnya dari hasil laut jadi masyarakatnya menginginkan dari hasil laut tersebut membawa keberkahan
+                            untuk kelangsungan hidupnya
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white mb-5">Hello World!</h3>
-                    <ul class=" text-slate-300">
+                
+                <div class="w-full px-4 mb-12 md:w-1/3 ">
+                    <!-- <h3 class="font-semibold text-xl text-white mb-5 ">Sedekah laut</h3> -->
+                    <ul class=" text-slate-300 mx-0 sm:mx-20">
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
+                            <a href="#home" class="inline-block text-base hover:text-sky-400 mb-3">Intro</a>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Galeri</a>
+                            <a href="#galeri" class="inline-block text-base hover:text-sky-400 mb-3">Galeri</a>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
+                            <a href="#prosesi" class="inline-block text-base hover:text-sky-400 mb-3">Prosesi</a>
+                        </li>
+                        <li>
+                            <a href="#galeri" class="inline-block text-base hover:text-sky-400 mb-3">Galeri</a>
                         </li>
                     </ul>
                 </div>
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white mb-5">Hello World!</h3>
-                    <ul class=" text-slate-300">
-                        <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Galeri</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base hover:text-sky-400 mb-3">Sejarah</a>
-                        </li>
-                    </ul>
+
+                <div class="w-full px-4 mb-12 md:w-1/3 ">
+                    <div class="mt-5 font-slab text-white  text-lg">
+                        <p class="text-slate-300 mb-3">Budaya yang mewarisi hidup kita.</p>
+                        <p class="text-slate-300 mb-3">Budaya mengakar dalam hidup kita.</p>
+                        <p class="text-slate-300 mb-3">Budaya yang memperkaya hidup kita.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1479,6 +1514,21 @@
     <script src="public/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        function initialize() {
+            var propertiPeta = {
+                center:new google.maps.LatLng(-8.5830695,116.3202515),
+                zoom:9,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            
+            var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+            }
+
+            // event jendela di-load  
+            google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </body>
 

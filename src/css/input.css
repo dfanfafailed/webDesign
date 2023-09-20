@@ -50,6 +50,10 @@
   transition-all duration-1000;
 }
 
+.fade {
+  @apply opacity-100;
+}
+
 .fade-down {
   @apply opacity-100
   translate-y-10;

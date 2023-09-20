@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./**/*.{html,js}'],
   theme: {
+    // fontSize: {
+    //   'sm': ['20px', '20px'],
+    // },
     container:{
       center:true,
       padding:'16px',
